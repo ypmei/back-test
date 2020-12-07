@@ -1,0 +1,83 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    background: url('../../images/bg01.gif') repeat;
+    line-height: 24px;
+}
+ul, li, form{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+    color: #458df9;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 180%;
+    &:hover {
+        color: #22a6ff;
+        cursor: pointer;
+    }
+}
+.container{
+    margin: 0px auto;
+    width: 100%;
+    min-height: 1000px;
+    background-color: #fff;
+}
+.header{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background-color: #000;
+}
+.header .title{
+    font-size: 18px;
+    color: #FFF;
+    margin-left: 20px;
+}
+.header .info{
+    font-size: 14px;
+    color: #FFF;
+    margin-left: 20px;
+}
+.lover-table{
+    width: 3000px;
+    border: 1px solid #EAEAEA;
+    border-collapse: collapse;
+}
+.lover-table tr td{
+    border-bottom: 2px solid #EAEAEA;
+}
+.content{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    .tv-chart {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+    }
+    .line-chart {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+}
+.candle-chart{
+    margin: 0px auto;
+}
+.kline-data{
+    margin: 20px auto;
+    width: 100%;
+    border-collapse: collapse;
+}

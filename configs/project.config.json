@@ -1,0 +1,13 @@
+{
+  "quant": {
+    "itemName": "quant",
+    "frame": "react",
+    "cssProcessor": "less",
+    "ts": false,
+    "isSsrItem": false,
+    "tplEngine": "none",
+    "useLatestModules": false,
+    "entryCssExt": "less",
+    "entryJsExt": "js"
+  }
+}
