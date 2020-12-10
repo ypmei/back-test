@@ -11,10 +11,14 @@
       queryArr.forEach((q) => {
         const [key, value] = q.split('=');
         if(key && key==='wshost') {
-          window.wsHost = value;
+          window.wsHost = value ;
+        } else {
+          window.wsHost = 'localhost:8000';
         }
         if(key && key==='capital') {
-          window.capital = value;
+          window.capital = value || 1000;
+        } else {
+          window.capital = 1000;
         }
       })
 

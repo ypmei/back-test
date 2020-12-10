@@ -115,6 +115,7 @@ const updateChart = (data) => {
 						初始本金: ${window.capital} <br />
 						赢利总额: ${format.interval(data.vinTotal)} <br />
 						亏损总额：${format.interval(Math.abs(data.failTotal))} <br />
+						费用总额：${format.interval(data.totalFee)} <br />
 						净利润: ${format.interval(data.profit)} <br />
 						收益率：${format.interval(data.profit*100/Number(window.capital))}% <br />
 						总次数: ${data.totalCount} <br />

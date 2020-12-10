@@ -1,7 +1,7 @@
 import { widget as TradingViewWidget } from "$utils/charting_library.min";
 import Datafeeds from '$utils/datafeeds_exchange';
 import { setKlineShapeCallback } from '$utils/socket_wcs';
-
+import {switchWhite, switchDark, studiesOverrides } from '$utils/candleConfig';
 // 研究线
 const mas = [
   // {
@@ -85,6 +85,10 @@ function initTradingView(){
 				// charts_storage_api_version: "1.1",
 				// client_id: 'tradingview.com',
 				// user_id: 'public_user_id',
+        studies_overrides: studiesOverrides,
+        toolbar_bg: 'transparent',
+        timezone: 'Asia/Shanghai',
+			  overrides: switchWhite(),
 				theme: getParameterByName('theme'),
 		});
 
